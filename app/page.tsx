@@ -52,6 +52,10 @@ export default function Home() {
           <h1 className="text-5xl leading-none font-medium tracking-[-0.06em] sm:text-6xl md:text-7xl">
             Ethevex
           </h1>
+          <p className="mt-3 text-sm leading-relaxed tracking-wide">
+            <span className="sr-only">Pronounced </span>
+            ETH-ee-weks
+          </p>
         </div>
         <p className="mt-5 max-w-full text-base leading-relaxed tracking-[-0.02em] sm:text-lg">
           A domain that encompasses all
