@@ -60,6 +60,7 @@ export default function Home() {
         <p className="mt-5 max-w-full text-base leading-relaxed tracking-[-0.02em] sm:text-lg">
           A domain that encompasses all
         </p>
+        <code className="mt-5 font-mono">&lt;Coming Soon/&gt;</code>
       </div>
     </main>
   );
