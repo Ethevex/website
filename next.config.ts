@@ -6,6 +6,10 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
   turbopack: {
     rules: {
+      "*.wgsl": {
+        loaders: [{ loader: "@vgpu/wgsl/loader-webpack", options: { minify: true } }],
+        as: "*.js",
+      },
       "*.css": {
         loaders: ["@tailwindcss/turbopack"],
         as: "*.css",
