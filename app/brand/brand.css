@@ -1,0 +1,39 @@
+.brand-page { --brand-header-height: 128px; }
+.brand-page [id] { scroll-margin-top: calc(var(--brand-header-height) + 24px); }
+@media (min-width: 64rem) {
+  .brand-page { --brand-header-height: 76px; }
+}
+
+.brand-source-code .shiki {
+  margin: 0;
+  max-height: 24rem;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1rem;
+  border-radius: 0;
+  background-color: var(--shiki-light-bg);
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+}
+
+.brand-source-code .shiki,
+.brand-source-code .shiki span {
+  color: var(--shiki-light, inherit);
+  font-style: var(--shiki-light-font-style, inherit);
+  font-weight: var(--shiki-light-font-weight, inherit);
+  text-decoration: var(--shiki-light-text-decoration, inherit);
+}
+
+.dark .brand-source-code .shiki { background-color: var(--shiki-dark-bg); }
+.dark .brand-source-code .shiki,
+.dark .brand-source-code .shiki span {
+  color: var(--shiki-dark, inherit);
+  font-style: var(--shiki-dark-font-style, inherit);
+  font-weight: var(--shiki-dark-font-weight, inherit);
+  text-decoration: var(--shiki-dark-text-decoration, inherit);
+}
+
+.brand-source-code .shiki:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 2px;
+}

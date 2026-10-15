@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 const footerLinks = [
   { label: "GitHub", href: "https://github.com/Ethevex" },
@@ -15,6 +16,11 @@ export function SiteFooter() {
         </div>
         <nav aria-label="Footer">
           <ul className="flex flex-wrap gap-x-6 gap-y-2">
+            <li>
+              <Link href="/brand" className="inline-flex min-h-11 items-center text-sm font-medium underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground">
+                Brand
+              </Link>
+            </li>
             {footerLinks.map(({ label, href }) => (
               <li key={label}>
                 <a
