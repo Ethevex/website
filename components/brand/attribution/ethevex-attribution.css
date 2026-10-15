@@ -1,0 +1,67 @@
+/* Ethevex attribution v1.0.0 — include once alongside the React or HTML source. */
+[data-ethevex-attribution] {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+  min-height: 40px;
+  padding: 4px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-transform: none;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  white-space: normal;
+}
+
+[data-ethevex-attribution][data-ethevex-variant="outlined"] {
+  border: 1px solid currentColor;
+  padding-inline: 12px;
+}
+
+[data-ethevex-attribution][data-ethevex-size="compact"] {
+  gap: 6px;
+  min-height: 32px;
+  font-size: 0.75rem;
+}
+
+[data-ethevex-attribution][data-ethevex-variant="outlined"][data-ethevex-size="compact"] {
+  padding-inline: 10px;
+}
+
+[data-ethevex-attribution][data-ethevex-appearance="light"] { color: #000000; }
+[data-ethevex-attribution][data-ethevex-appearance="dark"] { color: #ffffff; }
+
+[data-ethevex-attribution] > .ethevex-attribution__mark {
+  display: block;
+  flex: 0 0 auto;
+  width: 20px;
+  height: auto;
+  aspect-ratio: 547.5 / 472.5;
+  fill: currentColor;
+}
+
+[data-ethevex-attribution][data-ethevex-size="compact"] > .ethevex-attribution__mark {
+  width: 16px;
+}
+
+[data-ethevex-attribution] > .ethevex-attribution__label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+[data-ethevex-attribution] .ethevex-attribution__name { font-weight: 500; }
+[data-ethevex-attribution]:hover { text-decoration: underline; }
+[data-ethevex-attribution]:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
