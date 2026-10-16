@@ -62,4 +62,32 @@
     background: var(--foreground);
     color: var(--background);
   }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--foreground) var(--background);
+  }
+
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--background);
+    border-left: 2px solid var(--foreground);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: var(--foreground);
+    border-radius: 0 !important;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: color-mix(in srgb, var(--foreground) 80%, var(--background));
+  }
+
+  *::-webkit-scrollbar-corner {
+    background: var(--background);
+  }
 }
