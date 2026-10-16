@@ -4,10 +4,11 @@ import { ArrowDown } from "lucide-react";
 
 import { BrandPlayground } from "@/components/brand/brand-playground";
 import { getBrandSources } from "@/components/brand/brand-sources";
+import { BrandTypography } from "@/components/brand/brand-typography";
 
 export const metadata: Metadata = {
   title: "Brand — Ethevex",
-  description: "Ethevex attribution components, approved logo assets, and guidance for projects that are part of Ethevex.",
+  description: "Ethevex attribution components, approved logo assets, typography, and guidance for projects that are part of Ethevex.",
 };
 
 const assets = [
@@ -84,6 +85,8 @@ export default async function BrandPage() {
           ))}
         </div>
       </section>
+
+      <BrandTypography />
 
       <section id="guidelines" tabIndex={-1} aria-labelledby="guidelines-heading" className="border-t border-foreground/15 pt-12 focus:outline-none sm:pt-16">
         <h2 id="guidelines-heading" className="text-3xl font-medium tracking-[-0.035em] sm:text-4xl">Guidelines</h2>

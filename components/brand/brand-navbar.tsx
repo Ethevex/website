@@ -9,6 +9,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 const sections = [
   { href: "#components", label: "Components" },
   { href: "#assets", label: "Assets" },
+  { href: "#typography", label: "Typography" },
   { href: "#guidelines", label: "Guidelines" },
 ];
 
@@ -29,7 +30,7 @@ export function BrandNavbar() {
     // Correct a direct hash visit after the actual, possibly wrapped header is measured.
     const initialScroll = requestAnimationFrame(() => {
       const id = window.location.hash.slice(1);
-      if (["brand-main", "components", "assets", "guidelines"].includes(id)) {
+      if (["brand-main", ...sections.map(({ href }) => href.slice(1))].includes(id)) {
         document.getElementById(id)?.scrollIntoView({ behavior: "instant" });
       }
     });

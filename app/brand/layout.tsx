@@ -1,6 +1,18 @@
+import { Space_Mono } from "next/font/google";
+
 import { BrandNavbar } from "@/components/brand/brand-navbar";
 import { SiteFooter } from "@/components/layout/site-footer";
 import "./brand.css";
+
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
+  subsets: ["latin"],
+  weight: "400",
+  style: "normal",
+  display: "swap",
+  adjustFontFallback: false,
+  fallback: ["monospace"],
+});
 
 export default function BrandLayout({
   children,
@@ -8,7 +20,7 @@ export default function BrandLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div data-brand-page className="brand-page">
+    <div data-brand-page className={`brand-page ${spaceMono.variable}`}>
       <BrandNavbar />
       <main
         id="brand-main"
